@@ -4,12 +4,12 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-        <TextBox Width="420" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 0, 0, 10" IsReadOnly="True"></TextBox>
+        <TextBox Width="420" Height="20" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0, 0, 0, 10" IsReadOnly="True" x:Name="CoolBox"></TextBox>
         <StackPanel HorizontalAlignment="Center" Width="420" VerticalAlignment="Center" Height="100" Orientation="Horizontal">
-            <Button Name="LeftButton" Content="LeftButton" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0, 0, 10, 0" Width="200" Height="100" Click="LeftButton_Click"/>
-            <Button Name="RightButton" Content="RightButton" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10, 0, 0, 0" Width="200" Height="100" Click="RightButton_Click"/>
+            <Button Content="LeftButton" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0, 0, 10, 0" Width="200" Height="100" Click="LeftButton_Click" x:Name="LeftButton"/>
+            <Button Content="RightButton" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10, 0, 0, 0" Width="200" Height="100" Click="RightButton_Click" x:Name="RightButton"/>
         </StackPanel>
-            <Button Height="20" Content="Reset" Margin="0 10" IsEnabled="False"></Button>
+            <Button x:Name="ResetBox" Height="20" Content="Reset" Margin="0 10" IsEnabled="False" Click="ResetButton_Click"></Button>
         </StackPanel>
     </Grid>
 </Window>

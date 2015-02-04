@@ -24,9 +24,17 @@ namespace UXIntegrationPrototyping
         {
             InitializeComponent();
         }
-        private void MyButton_Click(object sender, RoutedEventArgs e)
+        private void LeftButton_Click(object sender, RoutedEventArgs e)
         {
-            MyButton.Content = "Touched";
+            LeftButton.Content = "Touched";
+        }
+        private void RightButton_Click(object sender, RoutedEventArgs e)
+        {
+            RightButton.Content = "Touched";
+        }
+        private void ResetButton_Click(object sender, RoutedEventArgs e)
+        {
+            CoolBox.Text = "Touched";
         }
     }
 }
