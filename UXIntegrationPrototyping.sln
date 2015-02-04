@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXIntegrationPrototyping", "UXIntegrationPrototyping\UXIntegrationPrototyping.csproj", "{9516687C-ADAE-4803-A3D1-01363E7B67F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UXIntegrationPrototypingSimpleTest", "UXIntegrationPrototypingSimpleTest\UXIntegrationPrototypingSimpleTest.csproj", "{E200130A-FDFF-4EE7-9B18-636710D29F27}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9516687C-ADAE-4803-A3D1-01363E7B67F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9516687C-ADAE-4803-A3D1-01363E7B67F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9516687C-ADAE-4803-A3D1-01363E7B67F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E200130A-FDFF-4EE7-9B18-636710D29F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E200130A-FDFF-4EE7-9B18-636710D29F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E200130A-FDFF-4EE7-9B18-636710D29F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E200130A-FDFF-4EE7-9B18-636710D29F27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
