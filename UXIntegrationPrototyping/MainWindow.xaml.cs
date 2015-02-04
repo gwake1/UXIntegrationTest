@@ -24,5 +24,9 @@ namespace UXIntegrationPrototyping
         {
             InitializeComponent();
         }
+        private void MyButton_Click(object sender, RoutedEventArgs e)
+        {
+            MyButton.Content = "Touched";
+        }
     }
 }

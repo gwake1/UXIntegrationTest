@@ -35,7 +35,25 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Core">
+      <HintPath>..\packages\Castle.Core.3.3.0\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.5.7.10213\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.mocks">
+      <HintPath>..\packages\NUnit.2.5.7.10213\lib\nunit.mocks.dll</HintPath>
+    </Reference>
+    <Reference Include="pnunit.framework">
+      <HintPath>..\packages\NUnit.2.5.7.10213\lib\pnunit.framework.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="TestStack.BDDfy">
+      <HintPath>..\packages\TestStack.BDDfy.4.1.0\lib\NET40\TestStack.BDDfy.dll</HintPath>
+    </Reference>
+    <Reference Include="TestStack.White">
+      <HintPath>..\packages\TestStack.White.0.13.3\lib\net40\TestStack.White.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Choose>
     <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
@@ -50,8 +68,35 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="TestStack.BDDfy.Samples\Atm\AccountHasInsufficientFund.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\Atm\AccountHolderWithdrawsCash.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\Atm\Atm.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\Atm\AtmHtmlReportConfig.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\BDDfy_Rocks.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\BuyingTrainFares\BuyerCategory.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\BuyingTrainFares\DayPass.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\BuyingTrainFares\Fare.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\BuyingTrainFares\Money.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\BuyingTrainFares\MonthlyPass.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\BuyingTrainFares\SingleTicket.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\BuyingTrainFares\WeeklyPass.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\BuyingTrainFareWithExamples.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\CanRunAsyncSteps.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\CanWorkWithoutAStory.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\CustomTextReporter.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\ModuleInitializer.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\TicTacToe\Game.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\TicTacToe\Helpers.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\TicTacToe\TicTacToe.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\TicTacToe\WinnerGame.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\TicTacToe\XWins.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\UseExamplesWithFluentApi.cs" />
+    <Compile Include="TestStack.BDDfy.Samples\UseExamplesWithReflectiveApi.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
